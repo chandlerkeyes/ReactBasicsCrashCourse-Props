@@ -1,5 +1,5 @@
 import React from 'react';
-import License from './components/greeting-card'
+import License from './components/license';
 import './App.css';
 
 function App() {
