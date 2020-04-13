@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import License from './components/greeting-card'
 import './App.css';
 
 function App() {
+  const image = require('./assets/my-picture.jpg')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <License
+        image={image}
+        name="Chandler Keyes"
+        streetAddress="123 Sesame St."
+        state="MI"
+        age={20}
+      />
     </div>
   );
 }
